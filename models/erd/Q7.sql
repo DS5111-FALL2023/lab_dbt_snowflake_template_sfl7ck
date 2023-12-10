@@ -1,0 +1,3 @@
+SELECT INSTRUCTOR
+FROM {{ ref('assigned') }}
+WHERE MNEMONIC='ds5100' AND TERM='summer2021'

@@ -1,0 +1,3 @@
+SELECT MNEMONIC, COUNT(*) AS LEARNINGOUTCOME
+FROM {{ ref('learning_outcomes') }}
+GROUP BY MNEMONIC
